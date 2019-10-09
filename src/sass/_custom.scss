@@ -1,0 +1,63 @@
+a {
+  &:focus {
+    &:after {
+      border-radius: 0.25rem;
+      box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
+    }
+  }
+}
+
+.card {
+  transition: ease 0.2s;
+  &:hover {
+    @extend .shadow;
+  }
+}
+
+.arr {
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: none;
+  background: $gray-400;
+  transition: ease 0.2s;
+  &:focus {
+    outline: none;
+    background: $gray-500;
+    box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
+  }
+  &:hover {
+    background: $gray-500;
+  }
+  i {
+    position: absolute;
+    top: 52%;
+    transform: translate(-50%, -50%);
+    color: $white;
+  }
+  &.arr-left {
+    transition: ease 0.2s;
+    left: -4rem;
+    &:hover,
+    &:focus {
+      left: -3rem;
+    }
+    i {
+      left: 4.5rem;
+    }
+  }
+  &.arr-right {
+    transition: ease 0.2s;
+    right: -4rem;
+    &:hover,
+    &:focus {
+      right: -3rem;
+    }
+    i {
+      left: 3.5rem;
+    }
+  }
+}
