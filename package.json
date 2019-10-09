@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "css": "gulp css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
