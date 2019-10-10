@@ -1,5 +1,8 @@
 a {
   &:focus {
+    &.btn {
+      box-shadow: none;
+    }
     &:after {
       border-radius: 0.25rem;
       box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.75);
